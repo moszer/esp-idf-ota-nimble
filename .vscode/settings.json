@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "sdkconfig.h": "c",
+        "updateota.h": "c",
+        "unistd.h": "c"
+    }
+}

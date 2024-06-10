@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/CMakeFiles/bootloader
+/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/CMakeFiles/bootloader.rule
+/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/CMakeFiles/bootloader-complete.rule
+/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

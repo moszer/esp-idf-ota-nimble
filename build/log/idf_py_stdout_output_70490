@@ -1,0 +1,46 @@
+-- IDF_TARGET is not set, guessed 'esp32c3' from sdkconfig '/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/sdkconfig'
+-- Found Git: /opt/homebrew/bin/git (found version "2.45.0")
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /Users/pattaraponprakodchue/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20230928/riscv32-esp-elf/bin/riscv32-esp-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/pattaraponprakodchue/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20230928/riscv32-esp-elf/bin/riscv32-esp-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Users/pattaraponprakodchue/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20230928/riscv32-esp-elf/bin/riscv32-esp-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32c3
+-- Project sdkconfig file /Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/sdkconfig
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: /Users/pattaraponprakodchue/.espressif/python_env/idf5.2_py3.12_env/bin/python (found version "3.12.3") found components: Interpreter
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "esp32-c3-ota" version: 1
+-- Adding linker script /Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/pattaraponprakodchue/esp/esp-idf/components/esp_system/ld/esp32c3/sections.ld.in
+-- Adding linker script /Users/pattaraponprakodchue/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ld
+-- Adding linker script /Users/pattaraponprakodchue/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.api.ld
+-- Adding linker script /Users/pattaraponprakodchue/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.libgcc.ld
+-- Adding linker script /Users/pattaraponprakodchue/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.newlib.ld
+-- Adding linker script /Users/pattaraponprakodchue/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.version.ld
+-- Adding linker script /Users/pattaraponprakodchue/esp/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3.ld
+-- Adding linker script /Users/pattaraponprakodchue/esp/esp-idf/components/soc/esp32c3/ld/esp32c3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table protobuf-c protocomm pthread riscv sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant
+-- Component paths: /Users/pattaraponprakodchue/esp/esp-idf/components/app_trace /Users/pattaraponprakodchue/esp/esp-idf/components/app_update /Users/pattaraponprakodchue/esp/esp-idf/components/bootloader /Users/pattaraponprakodchue/esp/esp-idf/components/bootloader_support /Users/pattaraponprakodchue/esp/esp-idf/components/bt /Users/pattaraponprakodchue/esp/esp-idf/components/cmock /Users/pattaraponprakodchue/esp/esp-idf/components/console /Users/pattaraponprakodchue/esp/esp-idf/components/cxx /Users/pattaraponprakodchue/esp/esp-idf/components/driver /Users/pattaraponprakodchue/esp/esp-idf/components/efuse /Users/pattaraponprakodchue/esp/esp-idf/components/esp-tls /Users/pattaraponprakodchue/esp/esp-idf/components/esp_adc /Users/pattaraponprakodchue/esp/esp-idf/components/esp_app_format /Users/pattaraponprakodchue/esp/esp-idf/components/esp_bootloader_format /Users/pattaraponprakodchue/esp/esp-idf/components/esp_coex /Users/pattaraponprakodchue/esp/esp-idf/components/esp_common /Users/pattaraponprakodchue/esp/esp-idf/components/esp_eth /Users/pattaraponprakodchue/esp/esp-idf/components/esp_event /Users/pattaraponprakodchue/esp/esp-idf/components/esp_gdbstub /Users/pattaraponprakodchue/esp/esp-idf/components/esp_hid /Users/pattaraponprakodchue/esp/esp-idf/components/esp_http_client /Users/pattaraponprakodchue/esp/esp-idf/components/esp_http_server /Users/pattaraponprakodchue/esp/esp-idf/components/esp_https_ota /Users/pattaraponprakodchue/esp/esp-idf/components/esp_https_server /Users/pattaraponprakodchue/esp/esp-idf/components/esp_hw_support /Users/pattaraponprakodchue/esp/esp-idf/components/esp_lcd /Users/pattaraponprakodchue/esp/esp-idf/components/esp_local_ctrl /Users/pattaraponprakodchue/esp/esp-idf/components/esp_mm /Users/pattaraponprakodchue/esp/esp-idf/components/esp_netif /Users/pattaraponprakodchue/esp/esp-idf/components/esp_netif_stack /Users/pattaraponprakodchue/esp/esp-idf/components/esp_partition /Users/pattaraponprakodchue/esp/esp-idf/components/esp_phy /Users/pattaraponprakodchue/esp/esp-idf/components/esp_pm /Users/pattaraponprakodchue/esp/esp-idf/components/esp_psram /Users/pattaraponprakodchue/esp/esp-idf/components/esp_ringbuf /Users/pattaraponprakodchue/esp/esp-idf/components/esp_rom /Users/pattaraponprakodchue/esp/esp-idf/components/esp_system /Users/pattaraponprakodchue/esp/esp-idf/components/esp_timer /Users/pattaraponprakodchue/esp/esp-idf/components/esp_wifi /Users/pattaraponprakodchue/esp/esp-idf/components/espcoredump /Users/pattaraponprakodchue/esp/esp-idf/components/esptool_py /Users/pattaraponprakodchue/esp/esp-idf/components/fatfs /Users/pattaraponprakodchue/esp/esp-idf/components/freertos /Users/pattaraponprakodchue/esp/esp-idf/components/hal /Users/pattaraponprakodchue/esp/esp-idf/components/heap /Users/pattaraponprakodchue/esp/esp-idf/components/http_parser /Users/pattaraponprakodchue/esp/esp-idf/components/idf_test /Users/pattaraponprakodchue/esp/esp-idf/components/ieee802154 /Users/pattaraponprakodchue/esp/esp-idf/components/json /Users/pattaraponprakodchue/esp/esp-idf/components/log /Users/pattaraponprakodchue/esp/esp-idf/components/lwip /Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/main /Users/pattaraponprakodchue/esp/esp-idf/components/mbedtls /Users/pattaraponprakodchue/esp/esp-idf/components/mqtt /Users/pattaraponprakodchue/esp/esp-idf/components/newlib /Users/pattaraponprakodchue/esp/esp-idf/components/nvs_flash /Users/pattaraponprakodchue/esp/esp-idf/components/nvs_sec_provider /Users/pattaraponprakodchue/esp/esp-idf/components/openthread /Users/pattaraponprakodchue/esp/esp-idf/components/partition_table /Users/pattaraponprakodchue/esp/esp-idf/components/protobuf-c /Users/pattaraponprakodchue/esp/esp-idf/components/protocomm /Users/pattaraponprakodchue/esp/esp-idf/components/pthread /Users/pattaraponprakodchue/esp/esp-idf/components/riscv /Users/pattaraponprakodchue/esp/esp-idf/components/sdmmc /Users/pattaraponprakodchue/esp/esp-idf/components/soc /Users/pattaraponprakodchue/esp/esp-idf/components/spi_flash /Users/pattaraponprakodchue/esp/esp-idf/components/spiffs /Users/pattaraponprakodchue/esp/esp-idf/components/tcp_transport /Users/pattaraponprakodchue/esp/esp-idf/components/ulp /Users/pattaraponprakodchue/esp/esp-idf/components/unity /Users/pattaraponprakodchue/esp/esp-idf/components/usb /Users/pattaraponprakodchue/esp/esp-idf/components/vfs /Users/pattaraponprakodchue/esp/esp-idf/components/wear_levelling /Users/pattaraponprakodchue/esp/esp-idf/components/wifi_provisioning /Users/pattaraponprakodchue/esp/esp-idf/components/wpa_supplicant
+-- Configuring done (3.5s)
+-- Generating done (0.3s)
+-- Build files have been written to: /Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build
