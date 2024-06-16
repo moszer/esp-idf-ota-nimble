@@ -22,6 +22,9 @@
 
 #include "esp_sleep.h"
 
+#include <stdlib.h>
+
+
 char *TAG = "ESP32 dev";
 uint8_t ble_addr_type;
 
@@ -38,6 +41,36 @@ static int device_write(uint16_t conn_handle, uint16_t attr_handle, struct ble_g
     }
     
     return 0;
+}
+
+int setMode = 50;
+
+static int MODEDATA(uint16_t conn_handle, uint16_t attr_handle, struct ble_gatt_access_ctxt *ctxt, void *arg)
+{
+    char *data = (char *)ctxt->om->om_data;
+
+    setMode = atoi(data); 
+    ESP_LOGI("data", "data : %s\n", data);
+    memset(data, 0, ctxt->om->om_len); // Clear entire buffer length
+
+    return 0;
+}
+
+void SetMode_watt() {
+    printf("%d", setMode); // Print current setMode for debugging
+
+    // Example loop logic based on setMode
+    for(int duty = 0; duty <= 1024; duty += setMode) {
+        pwm_con(duty);
+        vTaskDelay(1);
+    }
+    vTaskDelay(100 / portTICK_PERIOD_MS);
+
+    for(int duty = 1024; duty >= 0; duty -= setMode) {
+        pwm_con(duty);
+        vTaskDelay(1);
+    }
+    vTaskDelay(100 / portTICK_PERIOD_MS);
 }
 
 // Read data from ESP32 defined as server
@@ -59,6 +92,9 @@ static const struct ble_gatt_svc_def gatt_svcs[] = {
          {.uuid = BLE_UUID16_DECLARE(0xDEAD),        // Define UUID for writing
           .flags = BLE_GATT_CHR_F_WRITE,
           .access_cb = device_write},
+          {.uuid = BLE_UUID16_DECLARE(0xFEAD),        // Define UUID for writing
+          .flags = BLE_GATT_CHR_F_WRITE,
+          .access_cb = MODEDATA},
          {0}}},
     {0}};
 
@@ -161,18 +197,7 @@ void app_main()
 
     while (1)
     {
-      for(int duty = 0; duty <= 1024; duty+=10){
-         pwm_con(duty);
-         vTaskDelay(1);
-      }
-      vTaskDelay(100 / portTICK_PERIOD_MS);
-
-      for(int duty = 1024; duty >= 0; duty-=10){
-         pwm_con(duty);
-         vTaskDelay(1);
-      }
-
-      vTaskDelay(100 / portTICK_PERIOD_MS);
+      SetMode_watt();
     }
     
 }

@@ -1,0 +1,79 @@
+[0;32mI (265) cpu_start: ELF file SHA256:  ce57a93c8...[0m
+[0;32mI (270) cpuESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jun 17 2024 03:07:42[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (65) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (73) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  3 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot:  4 ota_0            OTA app          00 10 00110000 00100000[0m
+[0;32mI (95) boot:  5 ota_1            OTA app          00 11 00210000 00100000[0m
+[0;32mI (103) boot: End of partition table[0m
+[0;32mI (107) boot: Defaulting to factory image[0m
+[0;32mI (112) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=19658h (104024) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00029680 vaddr=3fc91000 size=02610h (  9744) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=0002bc98 vaddr=40380000 size=04380h ( 17280) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=5b924h (375076) map[0m
+[0;32mI (209) esp_image: segment 4: paddr=0008b94c vaddr=40384380 size=0cae8h ( 51944) load[0m
+[0;32mI (224) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (225) boot: Disabling RNG early entropy source...[0m
+[0;32mI (236) cpu_start: Unicore app[0m
+[0;32mI (245) cpu_start: Pro cpu start user code[0m
+[0;32mI (245) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (245) cpu_start: Application information:[0m
+[0;32mI (248) cpu_start: Project name:     esp32-c3-ota[0m
+[0;32mI (253) cpu_start: App version:      1754376-dirty[0m
+[0;32mI (259) cpu_start: Compile time:     Jun 17 2024 03:07:29[0m
+[0;32mI (265) cpu_start: ELF file SHA256:  ce57a93c8...[0m
+[0;32mI (270) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (275) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (280) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (285) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (289) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (297) heap_init: At 3FC95F90 len 0002A070 (168 KiB): RAM[0m
+[0;32mI (303) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (310) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (317) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (324) spi_flash: detected chip: generic[0m
+[0;32mI (327) spi_flash: flash io: dio[0m
+[0;32mI (332) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (338) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (345) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (351) coexist: coexist rom version 9387209[0m
+[0;32mI (356) main_task: Started on CPU0[0m
+[0;32mI (356) main_task: Calling app_main()[0m
+[0;32mI (366) BLE_INIT: BT controller compile version [30b57c4][0m
+[0;32mI (366) BLE_INIT: Bluetooth MAC: 34:b7:da:f9:6e:82[0m
+[0;32mI (376) phy_init: phy_version 1150,7c3c08f,Jan 24 2024,17:32:21[0m
+[0;32mI (416) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (426) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (426) ESP32 dev: BLE synced[0m
+[0;32mI (426) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (436) NimBLE: disc_mode=2[0m
+[0;32mI (436) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=512[0m
+[0;32mI (446) NimBLE: 
+[0m
+[0;32mI (446) ESP32 dev: V1.0[0m
+[0;32mI (446) Partition Info: Running partition: factory[0m
+[0;32mI (456) Partition Info: Found partition: nvs of size 16384[0m
+[0;32mI (466) Partition Info: Found partition: otadata of size 8192[0m
+[0;32mI (466) Partition Info: Found partition: phy_init of size 4096[0m
+505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050

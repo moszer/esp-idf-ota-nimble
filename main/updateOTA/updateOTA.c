@@ -90,6 +90,13 @@ void start_update_()
 size_t data_len = 0;
 
 int process_data(uint8_t *data, size_t len) {
+
+    printf("firmware size : %zu ", data_len);
+    for (int i = 0; i < len; i++) {
+        printf("%02X ", data[i]);
+    }
+    printf("\n");
+    
     if (segment > 0) {
         // Print data in hexadecimal format
         data_len+=len;
