@@ -578,7 +578,7 @@ C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS:INTERNAL=1
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/opt/homebrew/bin/git][v2.45.0()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/pattaraponprakodchue/.espressif/python_env/idf5.2_py3.12_env/bin/python][cfound components: Interpreter ][v3.12.3()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/pattaraponprakodchue/.espressif/python_env/idf5.2_py3.12_env/bin/python][cfound components: Interpreter ][v3.12.4()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //Have include stddef.h
@@ -599,7 +599,7 @@ _Python3_Compiler_REASON_FAILURE:INTERNAL=
 _Python3_Development_REASON_FAILURE:INTERNAL=
 _Python3_EXECUTABLE:INTERNAL=/Users/pattaraponprakodchue/.espressif/python_env/idf5.2_py3.12_env/bin/python
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;3;32;64;;;abi3;/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12;/Users/pattaraponprakodchue/.espressif/python_env/idf5.2_py3.12_env/lib/python3.12;/Users/pattaraponprakodchue/.espressif/python_env/idf5.2_py3.12_env/lib/python3.12/site-packages;/Users/pattaraponprakodchue/.espressif/python_env/idf5.2_py3.12_env/lib/python3.12/site-packages
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;4;32;64;;;abi3;/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/lib/python3.12;/Users/pattaraponprakodchue/.espressif/python_env/idf5.2_py3.12_env/lib/python3.12;/Users/pattaraponprakodchue/.espressif/python_env/idf5.2_py3.12_env/lib/python3.12/site-packages;/Users/pattaraponprakodchue/.espressif/python_env/idf5.2_py3.12_env/lib/python3.12/site-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=02586f8e582fb90c8ac445b05c115ccf
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=

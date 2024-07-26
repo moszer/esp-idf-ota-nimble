@@ -86,34 +86,36 @@ void start_update_()
     esp_restart();
 }
 
-
 size_t data_len = 0;
-
+size_t max_file_size = 0;
 int process_data(uint8_t *data, size_t len) {
-
-    printf("firmware size : %zu ", data_len);
-    for (int i = 0; i < len; i++) {
-        printf("%02X ", data[i]);
-    }
-    printf("\n");
     
     if (segment > 0) {
         // Print data in hexadecimal format
         data_len+=len;
-        printf("Data in hexadecimal %zu bytes / %d ", data_len, segment);
+        printf("Data in hexadecimal %zu bytes / %d MAXFILESIZE: %d ", data_len, segment, max_file_size);
         for (int i = 0; i < len; i++) {
             printf("%02X ", data[i]);
         }
         printf("\n");
 
-            // Write data to OTA partition
-            esp_err_t err = esp_ota_write(ota_handle, data, len);
-            if (err != ESP_OK) {
-                ESP_LOGE(TAG_, "esp_ota_write failed, error=%d", err);
-                esp_ota_end(ota_handle);
-                return -1;
-            }
+        // Write data to OTA partition
+        esp_err_t err = esp_ota_write(ota_handle, data, len);
+        if (err != ESP_OK) {
+            ESP_LOGE(TAG_, "esp_ota_write failed, error=%d", err);
+            esp_ota_end(ota_handle);
+            return -1;
+        }
+        //start update when len << 128byte
+        if(data_len >= max_file_size || len < 128){
+            ESP_LOGI(TAG_, "START REBOOT...");
+            start_update_();
+        }
+    } else {
+        max_file_size = atoi((char *)data); // Assuming data is at least sizeof(size_t) byte
+        printf("max_file_size: %d ", max_file_size);
     }
+
     segment += 1;
     return 0;
 }
