@@ -87,13 +87,13 @@ void start_update_()
 }
 
 size_t data_len = 0;
-size_t max_file_size = 0;
+int max_file_size = 0;
 int process_data(uint8_t *data, size_t len) {
     
     if (segment > 0) {
         // Print data in hexadecimal format
         data_len+=len;
-        printf("Data in hexadecimal %zu bytes / %d MAXFILESIZE: %d ", data_len, segment, max_file_size);
+        ESP_LOGE(TAG_,"Data in hexadecimal %zu bytes / %d MAXFILESIZE: %d     ", data_len, segment, max_file_size );
         for (int i = 0; i < len; i++) {
             printf("%02X ", data[i]);
         }
@@ -112,8 +112,11 @@ int process_data(uint8_t *data, size_t len) {
             start_update_();
         }
     } else {
-        max_file_size = atoi((char *)data); // Assuming data is at least sizeof(size_t) byte
-        printf("max_file_size: %d ", max_file_size);
+        char buffer[16] = {0};
+        memcpy(buffer, data, len);
+        buffer[len] = '\0';
+        max_file_size = atoi(buffer);
+        ESP_LOGE(TAG_, "max_file_size: %d", max_file_size);
     }
 
     segment += 1;

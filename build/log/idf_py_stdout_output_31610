@@ -1,0 +1,217 @@
+[0;32mI (285) cpu_start: Max chip rev:     v1.99 [0mESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0dc
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jul 26 2024 21:10:10[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (65) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (73) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  3 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot:  4 ota_0            OTA app          00 10 00110000 00100000[0m
+[0;32mI (95) boot:  5 ota_1            OTA app          00 11 00210000 00100000[0m
+[0;32mI (103) boot: End of partition table[0m
+[0;32mI (107) boot: Defaulting to factory image[0m
+[0;32mI (112) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=19d10h (105744) map[0m
+[0;32mI (137) esp_image: segment 1: paddr=00029d38 vaddr=3fc91e00 size=02668h (  9832) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=0002c3a8 vaddr=40380000 size=03c70h ( 15472) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=5cad4h (379604) map[0m
+[0;32mI (210) esp_image: segment 4: paddr=0008cafc vaddr=40383c70 size=0e108h ( 57608) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=0009ac0c vaddr=50000010 size=00004h (     4) load[0m
+[0;32mI (227) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (227) boot: Disabling RNG early entropy source...[0m
+[0;32mI (241) cpu_start: Unicore app[0m
+[0;32mI (250) cpu_start: Pro cpu start user code[0m
+[0;32mI (250) cpu_start: cpu freq: 80000000 Hz[0m
+[0;32mI (250) cpu_start: Application information:[0m
+[0;32mI (253) cpu_start: Project name:     esp32-c3-ota[0m
+[0;32mI (258) cpu_start: App version:      e123b39-dirty[0m
+[0;32mI (264) cpu_start: Compile time:     Jul 26 2024 21:33:05[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  756970822...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (285) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (290) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FC96E10 len 000291F0 (164 KiB): RAM[0m
+[0;32mI (308) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (315) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (322) heap_init: At 50000014 len 00001FD4 (7 KiB): RTCRAM[0m
+[0;32mI (329) spi_flash: detected chip: generic[0m
+[0;32mI (333) spi_flash: flash io: dio[0m
+[0;32mI (337) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (344) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (351) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (356) coexist: coexist rom version 9387209[0m
+[0;32mI (361) main_task: Started on CPU0[0m
+[0;32mI (361) main_task: Calling app_main()[0m
+[0;32mI (361) ESP32 dev: THIS FIRMWARE HAVE LISENCES PODX INDUSRTRY V1.0
+[0m
+[0;32mI (371) ESP32 dev: BETA VERSION
+[0m
+[0;32mI (381) BLE_INIT: BT controller compile version [30b57c4][0m
+[0;32mI (381) BLE_INIT: Bluetooth MAC: 9c:9e:6e:b6:e3:2e[0m
+[0;32mI (391) phy_init: phy_version 1150,7c3c08f,Jan 24 2024,17:32:21[0m
+[0;32mI (431) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (441) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (441) ESP32 dev: BLE synced[0m
+[0;32mI (441) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (451) NimBLE: disc_mode=2[0m
+[0;32mI (451) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=512[0m
+[0;32mI (461) NimBLE: 
+[0m
+[0;32mI (461) Partition Info: Running partition: factory[0m
+[0;32mI (471) Partition Info: Found partition: nvs of size 16384[0m
+[0;32mI (471) Partition Info: Found partition: otadata of size 8192[0m
+[0;32mI (481) Partition Info: Found partition: phy_init of size 4096[0m
+[0;32mI (5491) GPIO_INIT: Address: 0x60009020 0x60004024 0x60004008 0x6000400c[0m
+[0;32mI (5521) ESP32 dev: DR_REG_GPIO_BASE: 0x60004000, GPIO_ENABLE_W1TC_REG: 0x28, ADD_GPIO3: 0x100[0m
+UART OPENNING
+[0;32mI (5521) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (6511) SLEEP_CORE: Entering light sleep. Press GPIO3 to wake up.[0m
+[0;31mE (6511) SLEEP_CORE: Failed to enter light sleep: 259[0m
+[0;32mI (6511) SLEEP_CORE: Woke up![0m
+[0;32mI (6531) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (7541) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (8551) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (9561) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (10571) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (11581) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (12591) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (13461) GAP: BLE GAP EVENT CONNECT OK![0m
+[0;32mI (13591) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (14591) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (15601) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (16851) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (18301) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (19771) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (20011) OTA: OTA update started...[0m
+[0;31mE (20011) OTA: max_file_size: 0x35[0m
+[0;31mE (20041) OTA: Data in hexadecimal 128 bytes / 1 MAXFILESIZE: 5683202     [0m
+E9 06 02 2F 50 02 38 40 EE 00 00 00 05 00 03 03 00 C7 00 00 00 00 00 01 20 00 06 3C 00 9D 01 00 32 54 CD AB 00 00 00 00 00 00 00 00 00 00 00 00 65 31 32 33 62 33 39 2D 64 69 72 74 79 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 65 73 70 33 32 2D 63 33 2D 6F 74 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 32 31 3A 33 33 3A 30 35 00 00 00 00 00 00 00 00 
+[0;31mE (20111) OTA: Data in hexadecimal 256 bytes / 2 MAXFILESIZE: 5683202     [0m
+4A 75 6C 20 32 36 20 32 30 32 34 00 00 00 00 00 76 35 2E 32 2E 31 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 32 00 61 F3 C7 CC A8 71 62 3F 7D 2B 16 BF 0B 61 27 B2 8A ED 6C 46 83 C3 A3 55 BD 26 A9 E2 06 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+[0;31mE (20191) OTA: Data in hexadecimal 384 bytes / 3 MAXFILESIZE: 5683202     [0m
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 70 74 68 72 65 61 64 00 1B 5B 30 3B 33 31 6D 45 20 28 25 6C 75 29 20 25 73 3A 20 46 61 69 6C 65 64 20 74 6F 20 61 6C 6C 6F 63 61 74 65 20 74 61 73 6B 20 61 72 67 73 21 1B 5B 30 6D 0A 00 00 00 1B 5B 30 3B 33 31 6D 45 20 28 25 6C 75 29 20 25 73 3A 20 46 61 69 6C 65 64 20 74 6F 20 61 6C 6C 
+[0;31mE (20251) OTA: Data in hexadecimal 512 bytes / 4 MAXFILESIZE: 5683202     [0m
+6F 63 61 74 65 20 70 74 68 72 65 61 64 20 64 61 74 61 21 1B 5B 30 6D 0A 00 00 00 00 1B 5B 30 3B 33 31 6D 45 20 28 25 6C 75 29 20 25 73 3A 20 46 61 69 6C 65 64 20 74 6F 20 63 72 65 61 74 65 20 74 61 73 6B 21 1B 5B 30 6D 0A 00 00 66 61 6C 73 65 20 26 26 20 22 46 61 69 6C 65 64 20 74 6F 20 6C 6F 63 6B 20 74 68 72 65 61 64 73 20 6C 69 73 74 21 22 00 2F 2F 49 44 46 2F 63 6F 6D 70 6F 6E 
+[0;31mE (20311) OTA: Data in hexadecimal 640 bytes / 5 MAXFILESIZE: 5683202     [0m
+65 6E 74 73 2F 70 74 68 72 65 61 64 2F 70 74 68 72 65 61 64 2E 63 00 00 66 61 6C 73 65 20 26 26 20 22 46 61 69 6C 65 64 20 74 6F 20 72 65 6C 65 61 73 65 20 6D 75 74 65 78 21 22 00 66 61 6C 73 65 20 26 26 20 22 46 61 69 6C 65 64 20 74 6F 20 75 6E 6C 6F 63 6B 20 6D 75 74 65 78 21 22 00 00 74 6C 73 20 21 3D 20 4E 55 4C 4C 00 2F 2F 49 44 46 2F 63 6F 6D 70 6F 6E 65 6E 74 73 2F 70 74 68 
+[0;31mE (20371) OTA: Data in hexadecimal 768 bytes / 6 MAXFILESIZE: 5683202     [0m
+72 65 61 64 2F 70 74 68 72 65 61 64 5F 6C 6F 63 61 6C 5F 73 74 6F 72 61 67 65 2E 63 00 00 00 00 63 70 75 5F 73 74 61 72 74 00 00 00 1B 5B 30 3B 33 32 6D 49 20 28 25 6C 75 29 20 25 73 3A 20 55 6E 69 63 6F 72 65 20 61 70 70 1B 5B 30 6D 0A 00 1B 5B 30 3B 33 31 6D 45 20 28 25 6C 75 29 20 25 73 3A 20 4D 65 6D 70 72 6F 74 20 66 65 61 74 75 72 65 20 6C 6F 63 6B 65 64 20 61 66 74 65 72 20 
+[0;31mE (20431) OTA: Data in hexadecimal 896 bytes / 7 MAXFILESIZE: 5683202     [0m
+74 68 65 20 73 79 73 74 65 6D 20 72 65 73 65 74 21 20 50 6F 74 65 6E 74 69 61 6C 20 73 61 66 65 74 79 20 63 6F 72 72 75 70 74 69 6F 6E 2C 20 72 65 62 6F 6F 74 69 6E 67 2E 1B 5B 30 6D 0A 00 00 1B 5B 30 3B 33 31 6D 45 20 28 25 6C 75 29 20 25 73 3A 20 46 61 69 6C 65 64 20 74 6F 20 73 65 74 20 4D 65 6D 70 72 6F 74 20 66 65 61 74 75 72 65 20 28 30 78 25 30 38 58 3A 20 25 73 29 2C 20 72 
+[0;31mE (20491) OTA: Data in hexadecimal 1024 bytes / 8 MAXFILESIZE: 5683202     [0m
+65 62 6F 6F 74 69 6E 67 2E 1B 5B 30 6D 0A 00 00 63 6C 6B 00 1B 5B 30 3B 33 33 6D 57 20 28 25 6C 75 29 20 25 73 3A 20 33 32 20 6B 48 7A 20 58 54 41 4C 20 6E 6F 74 20 66 6F 75 6E 64 2C 20 73 77 69 74 63 68 69 6E 67 20 74 6F 20 69 6E 74 65 72 6E 61 6C 20 31 35 30 20 6B 48 7A 20 6F 73 63 69 6C 6C 61 74 6F 72 1B 5B 30 6D 0A 00 72 74 63 5F 63 6C 6B 5F 78 74 61 6C 5F 66 72 65 71 5F 67 65 
+[0;31mE (20561) OTA: Data in hexadecimal 1152 bytes / 9 MAXFILESIZE: 5683202     [0m
+74 28 29 20 3D 3D 20 52 54 43 5F 58 54 41 4C 5F 46 52 45 51 5F 34 30 4D 00 00 00 00 2F 2F 49 44 46 2F 63 6F 6D 70 6F 6E 65 6E 74 73 2F 65 73 70 5F 73 79 73 74 65 6D 2F 70 6F 72 74 2F 73 6F 63 2F 65 73 70 33 32 63 33 2F 63 6C 6B 2E 63 00 00 72 65 73 00 47 75 72 75 20 4D 65 64 69 74 61 74 69 6F 6E 20 45 72 72 6F 72 3A 20 43 6F 72 65 20 00 00 00 00 20 70 61 6E 69 63 27 65 64 20 28 00 
+[0;31mE (20621) OTA: Data in hexadecimal 1280 bytes / 10 MAXFILESIZE: 5683202     [0m
+29 2E 20 00 53 65 74 74 69 6E 67 20 62 72 65 61 6B 70 6F 69 6E 74 20 61 74 20 30 78 00 00 00 00 20 61 6E 64 20 72 65 74 75 72 6E 69 6E 67 2E 2E 2E 0D 0A 00 0D 0A 45 4C 46 20 66 69 6C 65 20 53 48 41 32 35 36 3A 20 00 52 65 62 6F 6F 74 69 6E 67 2E 2E 2E 0D 0A 00 00 76 66 73 5F 65 72 72 20 3D 3D 20 45 53 50 5F 4F 4B 20 26 26 20 22 46 61 69 6C 65 64 20 74 6F 20 72 65 67 69 73 74 65 72 
+[0;31mE (20681) OTA: Data in hexadecimal 1408 bytes / 11 MAXFILESIZE: 5683202     [0m
+20 76 66 73 20 63 6F 6E 73 6F 6C 65 22 00 00 00 2F 2F 49 44 46 2F 63 6F 6D 70 6F 6E 65 6E 74 73 2F 65 73 70 5F 73 79 73 74 65 6D 2F 73 74 61 72 74 75 70 2E 63 00 00 00 2F 64 65 76 2F 63 6F 6E 73 6F 6C 65 00 00 00 00 65 72 72 20 3D 3D 20 45 53 50 5F 4F 4B 20 26 26 20 22 46 61 69 6C 65 64 20 74 6F 20 69 6E 69 74 20 70 74 68 72 65 61 64 20 6D 6F 64 75 6C 65 21 22 00 00 00 66 6C 61 73 
+[0;31mE (20741) OTA: Data in hexadecimal 1536 bytes / 12 MAXFILESIZE: 5683202     [0m
+68 5F 72 65 74 20 3D 3D 20 45 53 50 5F 4F 4B 00 1B 5B 30 3B 33 31 6D 45 20 28 25 6C 75 29 20 25 73 3A 20 69 6E 69 74 20 66 75 6E 63 74 69 6F 6E 20 25 70 20 68 61 73 20 66 61 69 6C 65 64 20 28 30 78 25 78 29 2C 20 61 62 6F 72 74 69 6E 67 1B 5B 30 6D 0A 00 00 00 00 28 63 6F 6E 73 74 72 61 69 6E 74 20 69 67 6E 6F 72 65 64 29 00 00 00 00 1B 5B 30 3B 33 32 6D 49 20 28 25 6C 75 29 20 25 
+[0;32mI (20781) GAP: BLE GAP EVENT DISCONNECTED[0m
+[0;32mI (20781) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (20791) NimBLE: disc_mode=2[0m
+[0;32mI (20791) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=512[0m
+[0;32mI (20801) NimBLE: 
+[0m
+[0;32mI (20801) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (21831) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (22841) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (23851) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (24861) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (25871) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (26881) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (27891) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (28901) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (29901) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (30911) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (31921) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (32931) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (33941) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (34951) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (35961) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (36971) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (37981) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (38991) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (40001) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (41011) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (42021) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (43031) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (44041) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (45051) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (46061) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (47071) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (48081) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (49091) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (50101) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (51111) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (52121) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (53131) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (54141) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (55151) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (56161) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (57171) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (58181) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (59191) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (60201) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (61211) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (62221) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (63231) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (64241) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (65251) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (66261) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (67271) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (68281) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (69291) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (70301) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (71311) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (72321) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (73331) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (74341) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (75351) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (76361) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (77371) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (78381) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (79391) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (80401) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (81411) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (82421) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (83431) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (84431) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (85431) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (86431) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (87431) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (88431) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (89451) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (90461) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (91471) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (92481) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (93491) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (94501) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (95511) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (96521) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (97531) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (98541) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (99551) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (100561) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (101571) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (102581) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (103591) ESP32 dev: Main loop running, feeding the watchdog...[0m

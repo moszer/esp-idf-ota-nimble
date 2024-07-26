@@ -1,0 +1,96 @@
+[0;32mI (290) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (294) heap_init:ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d6
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1738
+load:0x403cc710,len:0xb9c
+load:0x403ce710,len:0x2e40
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jul 26 2024 21:10:10[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (65) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (73) boot:  2 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  3 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot:  4 ota_0            OTA app          00 10 00110000 00100000[0m
+[0;32mI (95) boot:  5 ota_1            OTA app          00 11 00210000 00100000[0m
+[0;32mI (103) boot: End of partition table[0m
+[0;32mI (107) boot: Defaulting to factory image[0m
+[0;32mI (112) esp_image: segment 0: paddr=00010020 vaddr=3c060020 size=19cd8h (105688) map[0m
+[0;32mI (137) esp_image: segment 1: paddr=00029d00 vaddr=3fc91e00 size=02668h (  9832) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=0002c370 vaddr=40380000 size=03ca8h ( 15528) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=5ca8ch (379532) map[0m
+[0;32mI (210) esp_image: segment 4: paddr=0008cab4 vaddr=40383ca8 size=0e0d0h ( 57552) load[0m
+[0;32mI (221) esp_image: segment 5: paddr=0009ab8c vaddr=50000010 size=00004h (     4) load[0m
+[0;32mI (227) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (227) boot: Disabling RNG early entropy source...[0m
+[0;32mI (241) cpu_start: Unicore app[0m
+[0;32mI (250) cpu_start: Pro cpu start user code[0m
+[0;32mI (250) cpu_start: cpu freq: 80000000 Hz[0m
+[0;32mI (250) cpu_start: Application information:[0m
+[0;32mI (253) cpu_start: Project name:     esp32-c3-ota[0m
+[0;32mI (258) cpu_start: App version:      e123b39-dirty[0m
+[0;32mI (264) cpu_start: Compile time:     Jul 26 2024 21:33:05[0m
+[0;32mI (270) cpu_start: ELF file SHA256:  cab7af6e8...[0m
+[0;32mI (275) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (280) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (285) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (290) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (295) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (302) heap_init: At 3FC96E10 len 000291F0 (164 KiB): RAM[0m
+[0;32mI (308) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (315) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (322) heap_init: At 50000014 len 00001FD4 (7 KiB): RTCRAM[0m
+[0;32mI (329) spi_flash: detected chip: generic[0m
+[0;32mI (333) spi_flash: flash io: dio[0m
+[0;32mI (337) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (344) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (351) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (356) coexist: coexist rom version 9387209[0m
+[0;32mI (361) main_task: Started on CPU0[0m
+[0;32mI (361) main_task: Calling app_main()[0m
+[0;32mI (361) ESP32 dev: THIS FIRMWARE HAVE LISENCES PODX INDUSRTRY V1.0
+[0m
+[0;32mI (371) ESP32 dev: BETA VERSION
+[0m
+[0;32mI (381) BLE_INIT: BT controller compile version [30b57c4][0m
+[0;32mI (381) BLE_INIT: Bluetooth MAC: 9c:9e:6e:b6:e3:2e[0m
+[0;32mI (391) phy_init: phy_version 1150,7c3c08f,Jan 24 2024,17:32:21[0m
+[0;32mI (441) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (441) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (441) ESP32 dev: BLE synced[0m
+[0;32mI (441) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (451) NimBLE: disc_mode=2[0m
+[0;32mI (451) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=256 adv_itvl_max=512[0m
+[0;32mI (461) NimBLE: 
+[0m
+[0;32mI (461) Partition Info: Running partition: factory[0m
+[0;32mI (471) Partition Info: Found partition: nvs of size 16384[0m
+[0;32mI (471) Partition Info: Found partition: otadata of size 8192[0m
+[0;32mI (481) Partition Info: Found partition: phy_init of size 4096[0m
+[0;32mI (5491) GPIO_INIT: Address: 0x60009020 0x60004024 0x60004008 0x6000400c[0m
+[0;32mI (5521) ESP32 dev: DR_REG_GPIO_BASE: 0x60004000, GPIO_ENABLE_W1TC_REG: 0x28, ADD_GPIO3: 0x100[0m
+UART OPENNING
+[0;32mI (5521) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (6511) SLEEP_CORE: Entering light sleep. Press GPIO3 to wake up.[0m
+[0;31mE (6511) SLEEP_CORE: Failed to enter light sleep: 259[0m
+[0;32mI (6511) SLEEP_CORE: Woke up![0m
+[0;32mI (6531) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (7541) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (8551) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (9561) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (10571) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (11581) ESP32 dev: Main loop running, feeding the watchdog...[0m
+[0;32mI (12591) ESP32 dev: Main loop running, feeding the watchdog...[0m

@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "esp32-c3-ota",
-    "project_version":    "f310768-dirty",
+    "project_version":    "e123b39-dirty",
     "project_path":       "/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota",
     "idf_path":           "/Users/pattaraponprakodchue/esp/esp-idf",
     "build_dir":          "/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build",

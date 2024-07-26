@@ -32,10 +32,8 @@ void ble_app_advertise(void);
 
 static int device_write(uint16_t conn_handle, uint16_t attr_handle, struct ble_gatt_access_ctxt *ctxt, void *arg)
 {
-
-
     if(intit_partition_()){
-        process_data((uint8_t*)ctxt->om->om_data, ctxt->om->om_len);
+        process_data((uint8_t*)ctxt->om->om_data, ctxt->om->om_len); 
     } else {
         ESP_LOGE("OTA", "**intit ERR**");
     }
@@ -266,14 +264,15 @@ void SENSOR_CONTROLLER(){
     {   
         uint32_t gpio_in = REG_READ(DR_REG_GPIO_BASE + GPIO_IN_REG_OFFSET);
         level = (gpio_in >> GPIO_INPUT_IO_3) & 0x1;
-        ESP_LOGI(TAG, "GPIO3 is HIGH: %d", level);
+        //ESP_LOGI(TAG, "GPIO3 is HIGH: %d", level);
         vTaskDelay(10 / portTICK_PERIOD_MS);
     }
 }
 
 void app_main()
 {   
-    ESP_LOGI(TAG, "THIS FIRMWARE HAVE LISENCES PODX INDUSRTRY V1.0");
+    ESP_LOGI(TAG, "THIS FIRMWARE HAVE LISENCES PODX INDUSRTRY V1.0\n");
+    ESP_LOGI(TAG, "BETA VERSION\n");
 
     nvs_flash_init();                             // 1 - Initialize NVS flash using
     // esp_nimble_hci_and_controller_init();      // 2 - Initialize ESP controller
@@ -287,6 +286,8 @@ void app_main()
     nimble_port_freertos_init(host_task);         // 6 - Run the thread
 
     check_partitions();
+
+    vTaskDelay(pdMS_TO_TICKS(5000)); //delay of feed watch dog
 
     init_gpio7(); //intit gpio7 for test
     intit_pin_pwm(2); //intit pwm gpio2 for test
@@ -307,6 +308,6 @@ void app_main()
     {
         ESP_LOGI(TAG, "Main loop running, feeding the watchdog...");
         esp_task_wdt_reset();
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        vTaskDelay(pdMS_TO_TICKS(1000)); //delay of feed watch dog
     }
 }

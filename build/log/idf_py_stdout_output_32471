@@ -1,0 +1,37 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/bootloader/esp-idf/esptool_py && /Users/pattaraponprakodchue/.espressif/python_env/idf5.2_py3.12_env/bin/python /Users/pattaraponprakodchue/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/bootloader/bootloader.bin
+Bootloader binary size 0x5170 bytes. 0x2e90 bytes (36%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/esp32-c3-ota.c.obj
+/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/main/esp32-c3-ota.c:220: warning: "REG_WRITE" redefined
+  220 | #define REG_WRITE(addr, val)           (*((volatile uint32_t *)(addr))) = (val)
+      | 
+In file included from /Users/pattaraponprakodchue/esp/esp-idf/components/soc/esp32c3/include/soc/assist_debug_reg.h:21,
+                 from /Users/pattaraponprakodchue/esp/esp-idf/components/riscv/include/riscv/rv_utils.h:12,
+                 from /Users/pattaraponprakodchue/esp/esp-idf/components/esp_hw_support/include/esp_cpu.h:18,
+                 from /Users/pattaraponprakodchue/esp/esp-idf/components/esp_hw_support/include/spinlock.h:11,
+                 from /Users/pattaraponprakodchue/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:61,
+                 from /Users/pattaraponprakodchue/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /Users/pattaraponprakodchue/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/main/esp32-c3-ota.c:6:
+/Users/pattaraponprakodchue/esp/esp-idf/components/soc/esp32c3/include/soc/soc.h:36: note: this is the location of the previous definition
+   36 | #define REG_WRITE(_r, _v)  do {                                                                                        \
+      | 
+/Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/main/esp32-c3-ota.c:221: warning: "REG_READ" redefined
+  221 | #define REG_READ(addr)                 (*((volatile uint32_t *)(addr)))
+      | 
+/Users/pattaraponprakodchue/esp/esp-idf/components/soc/esp32c3/include/soc/soc.h:41: note: this is the location of the previous definition
+   41 | #define REG_READ(_r) ({                                                                                                \
+      | 
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable esp32-c3-ota.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32c3 image...
+Merged 2 ELF sections
+Successfully created esp32c3 image.
+Generated /Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/esp32-c3-ota.bin
+[9/9] cd /Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/esp-idf/esptool_py && /Users/pattaraponprakodchue/.espressif/python_env/idf5.2_py3.12_env/bin/python /Users/pattaraponprakodchue/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/partition_table/partition-table.bin /Users/pattaraponprakodchue/Desktop/ESP_PROJECT/esp32-c3-ota/build/esp32-c3-ota.bin
+esp32-c3-ota.bin binary size 0x8aca0 bytes. Smallest app partition is 0x100000 bytes. 0x75360 bytes (46%) free.
