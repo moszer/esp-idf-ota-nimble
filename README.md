@@ -23,7 +23,7 @@ Full command to test
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[GNU AGPLv3](https://choosealicense.com/licenses/gpl-3.0/)
 
 
 ## Support

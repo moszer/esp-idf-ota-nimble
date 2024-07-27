@@ -1,0 +1,8 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/cu.usbmodem1101 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4004c0d6: uart_tx_one_char_uart.part.0 in ROM
+[0m
+[0;33m0x403806bc: esp_restart_noos at /Users/pattaraponprakodchue/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c:111
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 0ce46704def625f594f31ad22441e1ba8750da8856ea837845517da3115290ff[0m
+[0m
